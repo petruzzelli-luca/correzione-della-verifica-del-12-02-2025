@@ -7,39 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="caricamento_pagina()">
     <div class="song">
-        <h1>sorry</h1>
-        <img src="sorry_album1.jpeg" width="200" height="200">
-        <button onclick="info_justin()">info</button><br />
-        <p id="info_justin"> </p>
-        <button onclick="play_audio()">play</button><br />
-        <audio id="play_audio" src="audio.mp3"></audio>
+        <h1 id="titolo1"></h1>
+        <img id="img1" width="300" height="300"><br/>
+        <button onclick="info1()">info</button><br />
+        <p id="info1"> </p>
+        <button onclick="play_audio1()">play</button><br />
+        <button onclick="stop_audio1()" id="stop1">stop</button><br />
+        <audio id="play_audio1" controls></audio>
+        
     </div>
+
+
     <div class="video-area">
         <iframe width="560" height="315" src="https://www.youtube.com/watch?v=pkjzbSA-Gac" frameborder="0" allowfullscreen></iframe>
     </div>
+
+
     <hr>
     <div class="song">
-        <h1>taxi sulla luna</h1>
-        <img src="tonyff.jpeg" width="200" height="200">
-        <button onclick="info_tony1()">info</button><br>
-        <p id="info_tony1"> </p>
-        <button onclick="play_audio()">play</button><br />
-        <audio id="play_audio" src="audio.mp3"></audio>
+        <h1 id="titolo2"></h1>
+        <img id="img2" width="300" height="300"><br/>
+        <button onclick="info2()">info</button><br>
+        <p id="info2"> </p>
+        <button onclick="play_audio2()">play</button><br />
+        <audio id="play_audio2"></audio>
     </div>
+
+
     <div class="video-area">
         <iframe width="560" height="315" src="https://www.youtube.com/watch?v=fRh_vgS2dFE" frameborder="0" allowfullscreen></iframe>
     </div>
+
+
     <hr>
     <div class="song">
-        <h1>boss</h1>
-        <img src="tonyff.jpeg" width="200" height="200">
-        <button onclick="info_tony2()">info</button><br />
-        <p id="info_tony2"> </p>
-        <button onclick="play_audio()">play</button>
+        <h1 id="titolo3"></h1>
+        <img id="img3" width="300" height="300"><br/>
+        <button onclick="info3()">info</button><br />
+        <p id="info3"> </p>
+        <button onclick="play_audio3()">play</button>
         <br\>
-        <audio id="play_audio" src="audio.mp3"></audio>
+        <audio id="play_audio3" ></audio>
         <div class="video-area">
             <iframe width="560" height="315" src="https://www.youtube.com/watch?v=pkjzbSA-Gac" frameborder="0" allowfullscreen></iframe>
         </div>
