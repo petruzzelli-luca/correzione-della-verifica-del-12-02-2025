@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+
+.song {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.song img {
+    max-width: 50%;
+    background-size: 20%;
+}
+
+.video-area {
+    flex-grow: 1; 
+}
+
+iframe {
+    width: 100%; 
+    height: auto;
+}
