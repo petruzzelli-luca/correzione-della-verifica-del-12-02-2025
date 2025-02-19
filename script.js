@@ -3,7 +3,7 @@ var canzone1 = {
     Immagine_del_disco : "immagini/after hours_album.jpg",
     Informazioni:  "babababababababababababa",
     Audio_della_canzone: "mp3/The Weeknd After Hours.mp3",
-    Link:  "https://www.youtube.com/watch?v=pkjzbSA-Gac"
+    Link:  "https://www.youtube.com/embed/[ID_VIDEO]"
 };
   
 
@@ -12,7 +12,7 @@ var canzone2 = {
     Immagine_del_disco: "immagini/Justin_Bieber_Sorry.png", 
     Informazioni: "Una canzone di Justin Bieber, pubblicata nel 2015. Parla di scuse e rimpianto.",
     Audio_della_canzone: "mp3/Justin Bieber Sorry.mp3", 
-    Link: "https://www.youtube.com/watch?v=fRh_vgS2dFE"  
+    Link: "https://www.youtube.com/embed/[ID_VIDEO]"
   };
   
   var canzone3 = {
@@ -20,7 +20,7 @@ var canzone2 = {
     Immagine_del_disco: "immagini/tonyff_boss.jpg", 
     Informazioni: "bababababab.",
     Audio_della_canzone: "mp3/Tony Effe BOSS.mp3", 
-    Link: "https://www.youtube.com/watch?v=pkjzbSA-Gac"
+    Link: "https://www.youtube.com/embed/[ID_VIDEO]"
   };
 
   
@@ -28,7 +28,6 @@ var canzone2 = {
   function play_audio1() {
     document.getElementById('play_audio1').src = canzone1.Audio_della_canzone;
     document.getElementById('play_audio1').play();
-    document.getElementById("stop1").disabled = false;
 }
 
 
@@ -84,6 +83,14 @@ function info3(){
 
 
 
-function link3(){
+function link1() {
+  document.getElementById("Link1").src = canzone1.Link;
+}
+
+function link2() {
+  document.getElementById("Link2").src = canzone2.Link;
+}
+
+function link3() {
   document.getElementById("Link3").src = canzone3.Link;
 }
