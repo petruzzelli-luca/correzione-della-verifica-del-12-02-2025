@@ -17,7 +17,7 @@ var canzone2 = {
   
   var canzone3 = {
     Titolo: "BOSS",
-    Immagine_del_disco: "immagini/tonyff_boss.jpeg", 
+    Immagine_del_disco: "immagini/tonyff_boss.jpg", 
     Informazioni: "bababababab.",
     Audio_della_canzone: "mp3/Tony Effe BOSS.mp3", 
     Link: "https://www.youtube.com/watch?v=pkjzbSA-Gac"
@@ -31,10 +31,6 @@ var canzone2 = {
     document.getElementById("stop1").disabled = false;
 }
 
-function stop1() {
-  document.getElementById('play_audio1').pause()
-  document.getElementById("stop1").disabled = true;
-}
 
 function play_audio2() {
   document.getElementById('play_audio2').src = canzone2.Audio_della_canzone;
@@ -47,24 +43,47 @@ function play_audio3() {
 }
 
 
-  function info1(){
-    document.getElementById("info1").innerHTML=`info: ${canzone1.Informazioni}`;
+function info1(){
+  const infoElement = document.getElementById("info1");
+  if (infoElement.innerHTML === "") {
+      infoElement.innerHTML = `INFO: ${canzone1.Informazioni}`;
+  } else {
+      infoElement.innerHTML = "";
   }
-  function info2(){
-    document.getElementById("info2").innerHTML=`info: ${canzone2.Informazioni}`;
+}
+
+function info2(){
+  const infoElement = document.getElementById("info2");
+  if (infoElement.innerHTML === "") {
+      infoElement.innerHTML = `INFO: ${canzone2.Informazioni}`;
+  } else {
+      infoElement.innerHTML = "";
   }
-  function info3(){
-    document.getElementById("info3").innerHTML=`info: ${canzone3.Informazioni}`;
+}
+
+function info3(){
+  const infoElement = document.getElementById("info3");
+  if (infoElement.innerHTML === "") {
+      infoElement.innerHTML = `INFO: ${canzone3.Informazioni}`;
+  } else {
+      infoElement.innerHTML = "";
   }
+}
 
   function caricamento_pagina(){
-    document.getElementById("titolo1").innerHTML=canzone1.Titolo;
-    document.getElementById("titolo2").innerHTML=canzone2.Titolo;
-    document.getElementById("titolo3").innerHTML=canzone3.Titolo;
+    document.getElementById("titolo1").innerHTML = canzone1.Titolo;
+    document.getElementById("titolo2").innerHTML = canzone2.Titolo;
+    document.getElementById("titolo3").innerHTML = canzone3.Titolo;
 
-    document.getElementById("img1").src = canzone3.Immagine_del_disco;
-    document.getElementById("img2").src = canzone3.Immagine_del_disco;
+    document.getElementById("img1").src = canzone1.Immagine_del_disco;
+    document.getElementById("img2").src = canzone2.Immagine_del_disco;
     document.getElementById("img3").src = canzone3.Immagine_del_disco;
 
     document.getElementById("stop1").disabled = true;
-  }
+}
+
+
+
+function link3(){
+  document.getElementById("Link3").src = canzone3.Link;
+}
