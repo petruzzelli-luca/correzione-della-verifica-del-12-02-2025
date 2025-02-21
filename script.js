@@ -2,7 +2,7 @@ var canzone1 = {
   Titolo: "AFTER HOURS",
   Artista: "The Weeknd",
   Data_di_uscita: "20 Marzo 2020",
-  Immagine_del_disco: "immagini/after_hours_album.jpg",
+  Immagine_del_disco: "immagini/after hours_album.jpg",
   Informazioni: "L'album 'After Hours' segna un ritorno al sound più melodico di The Weeknd, esplorando temi di solitudine e rimpianto. 'Blinding Lights' è uno dei brani più iconici.",
   Audio_della_canzone: "mp3/The Weeknd After Hours.mp3",
   Link: "https://www.youtube.com/embed/pkjzbSA-Gac"
