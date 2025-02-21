@@ -5,7 +5,7 @@ var canzone1 = {
   Immagine_del_disco: "immagini/after hours_album.jpg",
   Informazioni: "L'album 'After Hours' segna un ritorno al sound più melodico di The Weeknd, esplorando temi di solitudine e rimpianto. 'Blinding Lights' è uno dei brani più iconici.",
   Audio_della_canzone: "mp3/The Weeknd After Hours.mp3",
-  Link: "https://www.youtube.com/embed/pkjzbSA-Gac"
+  Link: "https://www.youtube.com/embed/ygTZZpVkmKg"
 };
 
 var canzone2 = {
@@ -25,7 +25,7 @@ var canzone3 = {
   Immagine_del_disco: "immagini/tonyff_boss.jpg",
   Informazioni: "‘BOSS’ è un singolo di Tony Effe che esplora la vita da 'boss' e il successo personale. Il brano è caratterizzato da un beat energico e un testo che racconta la sua esperienza nel mondo musicale.",
   Audio_della_canzone: "mp3/Tony Effe BOSS.mp3",
-  Link: "https://www.youtube.com/embed/pkjzbSA-Gac"
+  Link: "https://www.youtube.com/embed/3cn6wQaLkeQ"
 };
 
 
@@ -76,17 +76,7 @@ function info3(){
 }
 
 
-function link1() {
-  document.getElementById("Link1").src = canzone1.Link;
-}
 
-function link2() {
-  document.getElementById("Link2").src = canzone2.Link;
-}
-
-function link3() {
-  document.getElementById("Link3").src = canzone3.Link;
-}
   function caricamento_pagina(){
     document.getElementById("titolo1").innerHTML = canzone1.Titolo;
     document.getElementById("titolo2").innerHTML = canzone2.Titolo;
@@ -96,8 +86,9 @@ function link3() {
     document.getElementById("img2").src = canzone2.Immagine_del_disco;
     document.getElementById("img3").src = canzone3.Immagine_del_disco;
 
-    
-    
+    document.getElementById("Link1").src = canzone1.Link;
+    document.getElementById("Link2").src = canzone2.Link;
+    document.getElementById("Link3").src = canzone3.Link;
 }
 
 
